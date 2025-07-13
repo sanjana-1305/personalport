@@ -1,0 +1,138 @@
+/* index.css */
+
+/* ====== Root Theme Colors ====== */
+:root {
+  --bg-color: #f8f9fb;
+  --primary: #6a82fb;
+  --secondary: #a18cd1;
+  --text: #333;
+  --card-bg: #ffffff;
+  --link: #4a6edb;
+}
+
+/* ====== Reset and Base ====== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+/* ====== Navigation Bar ====== */
+nav {
+  background: var(--card-bg);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--text);
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: var(--primary);
+}
+
+/* ====== Hero Section (for Home Page) ====== */
+.hero {
+  text-align: center;
+  padding: 3rem 1rem;
+  background: linear-gradient(to right, var(--primary), var(--secondary));
+  color: white;
+  border-radius: 0 0 30px 30px;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  border: 4px solid white;
+  object-fit: cover;
+}
+
+/* ====== Section Styling ====== */
+.section {
+  padding: 2rem;
+  max-width: 900px;
+  margin: 2rem auto;
+  background: var(--card-bg);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+/* ====== Skills List ====== */
+.skills-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding-top: 1rem;
+}
+
+.skills-list li {
+  background: var(--secondary);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: 500;
+}
+
+/* ====== Projects Section ====== */
+.project {
+  margin-bottom: 2rem;
+}
+
+.project h3 {
+  color: #6a82fb;
+  margin-bottom: 0.5rem;
+}
+
+.project p {
+  font-size: 1rem;
+  margin-left: 1rem;
+  color: #333; /* this line makes sure text is visible */
+  display: block; /* ensures it's not hidden */
+}
+
+
+/* ====== Contact Section ====== */
+#contact p {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+/* ====== Footer ====== */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: var(--primary);
+  color: white;
+  margin-top: 3rem;
+  border-radius: 20px 20px 0 0;
+}
